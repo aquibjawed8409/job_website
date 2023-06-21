@@ -1,0 +1,939 @@
+/* link font awesome file */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+/* link google fonts cdn file */
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500&display=swap');
+
+
+:root {
+    --main-color: #2980b9;
+    --red: #ff0000;
+    --light-color: #777;
+    --light-bg: #eee;
+    --black: #2c3e50;
+    --white: #fff;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    --border: 0.1rem solid rgba(0, 0, 0, 0.3)
+}
+
+* {
+    font-family: 'Mukta', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--light-bg);
+}
+
+section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: white;
+    border-radius: .5rem;
+    padding: .7rem 1.6rem;
+    text-transform: capitalize;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+}
+.heading{
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    max-height: 75rem;
+    font-size: 2.8rem;
+    border-top: 5px solid var(--main-color);
+    border-bottom: 5px solid var(--main-color);
+    padding: 2rem;
+}
+
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+.header .flex {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header .flex .menu-btn {
+    display: none;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.header .flex .logo {
+    font-size: 2.5rem;
+    padding: .5rem;
+    color: black;
+}
+
+.header .flex .logo .fa-briefcase {
+    margin-right: 1rem;
+}
+
+.header .flex .navbar a {
+
+    color: black;
+    font-size: 2rem;
+    margin-right: 2.5rem;
+    text-transform: capitalize;
+}
+
+.header .flex .navbar a:hover {
+    color: var(--black);
+    border-bottom: 1px solid rgb(243, 196, 196);
+}
+
+.header .flex .btn {
+    font-size: 1.7rem;
+}
+
+.header .flex .btn:hover {
+    background-color: var(--black);
+}
+
+
+
+/* ...........................Home Section.......................................... */
+
+.home-container {
+    background: url(images/hero-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-container form{
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 30rem;
+}
+
+form h3{
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+form label{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+form label span{
+    color: var(--red);
+}
+form input{
+    width: 100%;
+    background-color: var(--light-bg);
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+form  a{
+    text-align: center;
+    margin-top: 1rem;
+}
+form  a .btn:hover{
+    background-color: var(--black);
+}
+
+
+
+
+
+
+
+
+
+/* .home form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: var(--white);
+    width: 25rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+}
+.form-container h3 {
+    font-size: 4rem;
+}
+
+.home .form-container{
+    display: flex;
+    justify-content: flex-start;
+} */
+
+
+
+
+/* ...........................Category Section.......................................... */
+
+.category .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: .5rem;
+}
+
+.category .box-container .box {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    margin: 1.5rem;
+    min-width: 20rem;
+    padding: .7rem;
+    border-radius: .5rem;
+}
+
+.category .box-container .box:hover {
+    background-color: var(--black);
+    /* color: var(--white);
+    font-weight: 200; */
+}
+
+.category .box-container .box i {
+    margin-top: 1.2rem;
+    margin-left: .5rem;
+}
+
+.category .box-container .box i::before {
+    border-radius: .5rem;
+    font-size: 2rem;
+    padding: .5rem;
+    background-color: rgb(235, 215, 215);
+}
+
+.category .box-container .box .category-name h3 {
+    font-size: 1.8rem;
+}
+
+
+
+
+
+/* ...........................Latest Job Section.......................................... */
+
+.job-container .job {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+.job .job-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    padding: 1.8rem 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 31rem;
+}
+
+.job .job-card .logo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.3rem;
+}
+
+.job .job-card .logo img {
+    margin-right: 1.5rem;
+    height: 8rem;
+    width: 8rem;
+}
+
+.job .job-card .logo .company-name {
+    margin-top: 1.5rem;
+}
+
+.job .job-card .logo .company-name h3 {
+    font-size: 2rem;
+}
+
+.job .job-card .logo .company-name p {
+    font-size: 1.5rem;
+}
+
+.job .job-card h3 {
+    font-size: 2.2rem;
+    letter-spacing: .1rem;
+}
+
+.job .job-card p {
+    font-size: 1.8rem;
+}
+
+.job .job-card p i {
+    color: var(--black);
+    margin: .2rem;
+}
+
+.job .job-card .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+
+.job-card .wrapper p {
+    background-color: var(--light-bg);
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border-radius: .5rem;
+}
+.job-card .heart{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.job-card .heart .btn:hover{
+    background-color: var(--black);
+}
+.job-card .heart .fa-heart{
+    background-color: var(--light-bg);
+    font-size: 2rem;
+    /* margin-top: 1rem; */
+    padding: .5rem;
+    border-radius: .5rem;
+    text-align: center;
+    /* align-items: center; */
+}
+
+.job-container .title .btn:hover{
+    background-color: var(--black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ...........................About Section.......................................... */
+
+
+
+.about img{
+    width: 100%;
+    margin-top: 0px;
+}
+.specification{
+    box-shadow: var(--box-shadow);
+    margin: 0px 7rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: .5rem;
+    padding: 1.5rem;
+
+}
+.specification h3{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+.specification p{
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    margin-bottom: 1.5rem;
+}
+.specification .btn:hover{
+    background-color: var(--black);
+}
+
+.review-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.review-container .box{
+    background-color: var(--white);
+    padding: 1.8rem 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 31rem;
+    margin: .5rem;
+}
+.review-container .box i{
+    font-size: 1.4rem;
+    color: var(--main-color);
+}
+
+.review-container .box h3{
+    text-align: right;
+    font-size: 1.7rem;
+}
+.review-container .box p{
+    font-size: 1.3rem;
+    text-align: right;
+    line-height: 2.7rem;
+}
+.review-container .box .flex{
+    display: flex;
+}
+.review-container .box .flex img{
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+.review-container .box .flex h3{
+    text-align: left;
+}
+
+
+
+
+/* ...........................Filter Section.......................................... */
+
+form{
+    max-width: 70rem;
+    background-color: var(--white);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+form .row1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    /* margin: 0 auto; */
+}
+form .row1 .col{
+    width: calc(100%/2 - 1rem);
+}
+form .col p{
+    padding: .5rem;
+}
+form .col p span{
+    color: var(--red);
+}
+form .col input{
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+
+
+
+
+form .dropdown{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    /* margin: 0 auto; */
+}
+form .dropdown .col{
+    width: calc(100%/5 - 1rem);
+    position: relative;
+}
+
+form .dropdown .col .lists{
+     position: absolute;
+     top: 35px;
+     right: 0;
+     left: 0;
+    background-color: var(--white);
+    margin-top: 1rem;
+    transform: scaleY(0);
+}
+
+form .dropdown .col .lists .items{
+    width: 100%;
+    gap: 1rem;
+    cursor: pointer;
+}
+form .dropdown .col .lists .items:hover{
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+}
+
+form .dropdown .col .lists:hover,
+form .dropdown .col:hover .lists,
+form .dropdown .col .output:focus + .lists,
+form .dropdown .col .about:focus-within + .lists{
+    transform: scaleY(1);
+    transition: .5s ease;
+}
+
+
+/* ...........................Job Details Section.......................................... */
+
+
+.job-detail{
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    line-height: 3rem;
+}
+.job-detail h1{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.job-detail .fa-location-dot{
+    margin-right: 1rem;
+}
+.job-detail a,p{
+    font-size: 1.7rem;
+}
+.job-detail .job-details-bg{
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.job-detail ul{
+    padding: 2rem;
+}
+.job-detail li{
+    font-size: 1.7rem;
+}
+.job-detail .heart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.job-detail .heart .btn:hover{
+    background-color: var(--black);
+}
+.job-detail .heart i{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1.5rem 1.6rem;
+    border-radius: .5rem;
+    gap: .5rem;
+}
+.heart .fa-heart{
+    margin-right: .5rem;
+}
+.fa-heart:before {
+    margin-right: 0.7rem;
+}
+
+
+
+/* ...........................Company Details Section.......................................... */
+
+
+.company-detail-container{
+    width: 80%;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: 0 auto;
+}
+.company-detail-container .image{
+    background-color: var(--light-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    border-radius: .5rem;
+    margin: 0 auto;
+    padding: 1rem;
+    
+}
+.company-detail-container .image img{
+    width: 9rem;
+    height: 9rem;
+    margin-bottom: 1.2rem;
+    margin-top: .2rem;
+}
+.company-detail-container .image i{
+    margin-right: .5rem;
+}
+.company-detail-container h1{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+.company-detail-container p{
+    font-size: 1.7rem;
+}
+.company-detail-container ul{
+    margin: 1.5rem 2rem;
+}
+.company-detail-container li{
+    font-size: 1.7rem;
+}
+.job{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* ...........................Contact Us Section.......................................... */
+
+
+.contact-number{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin: 0 auto; */
+    margin: 2rem 0;
+    /* align-items: center; */
+}
+.contact-number .box{
+    background-color: var(--white);
+    width: 25rem;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 1.2rem;
+}
+.contact-number .box i{
+    font-size: 2rem;
+    background-color: var(--black);
+    border-radius: .5rem;
+    padding: .8rem;
+    color: var(--white);
+    margin-bottom: 1.2rem;
+}
+.contact-number .box p{
+    font-size: 1.7rem;
+}
+
+
+
+.message-container{
+    max-width: 70rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.message-container .message-title{
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.message-container form .input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.message-container form .input .input-box{
+    width: calc(100%/2 - 1rem);
+    margin-bottom: 1.2rem;
+}
+form .input .input-box p{
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    margin-left: .5rem;
+}
+form .input .input-box p span{
+    color: var(--red);
+}
+form .input .input-box input{
+    font-size: 1.5rem;
+    background-color: var(--light-bg);
+    padding: .7rem;
+    width: 100%;
+    border-radius: .5rem;
+}
+.message-container form .input .input-box #role{
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    padding: .7rem;
+}
+form .input .text-area{
+    width: 100%;
+}
+form .input .text-area p{
+    font-size: 1.7rem;
+}
+
+form .input .text-area textarea{
+    width: 100%;
+    background-color: var(--light-bg);
+    padding: .7rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+form .input .text-area span{
+    color: var(--red);
+}
+.message-container form .send-message-btn {
+    text-align: center;
+}
+.message-container form .send-message-btn .btn:hover{
+    background-color: var(--black);
+}
+
+
+
+/* ...........................Accounts Section.......................................... */
+
+
+
+
+.accounts-section{
+    background-image: url(images/accounts.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accounts-section form{
+    width: 40rem;
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+}
+.accounts-section form input{
+    width: 100%;
+    background-color: var(--light-bg);
+    margin: 1.2rem .5rem;
+    padding: .7rem;
+}
+.accounts-section form .btn:hover{
+    background-color: var(--black);
+}
+
+.accounts-section form p{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.accounts-section form p span{
+    color: var(--main-color);
+    margin-right: .2rem;
+    text-decoration: underline;
+}
+.accounts-section form p span:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ...........................Footer Section.......................................... */
+
+.footer-container {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+}
+
+.footer-container .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container .content h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.footer-container .content a {
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+    color: black;
+    text-transform: capitalize;
+}
+
+.footer-container .content a i {
+    margin-right: 1.5rem;
+    color: var(--main-color);
+}
+.footer-container .content a:hover i{
+    transition: .5s ease;
+    margin-left: 1.5rem;
+}
+
+.copyright {
+    padding: 2rem;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.copyright span {
+    color: var(--black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ...........................Media Queries.......................................... */
+
+
+@media (max-width:768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header .flex .menu-btn {
+        display: inline-block;
+        margin-left: 3rem;
+    }
+
+    .header .flex .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: var(--border);
+        background-color: var(--white);
+        z-index: 100;
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+        /* display: block; */
+        visibility: hidden;
+    }
+
+    .header .flex .navbar .active {
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 59% 48%); */
+        visibility: visible;
+    }
+
+    .header .flex .navbar a {
+        /* display: inline-block; */
+        display: block;
+        /* width: 100%; */
+        margin: 2rem;
+    }
+
+    .header .flex .navbar a:hover {
+        background-color: var(--light-color);
+    }
+    .heading h1{
+        font-size: 2.7rem;
+    }
+    .message-container{
+        padding: 1rem;
+    }
+    .message-container form .input .input-box{
+        width: 100%;
+    }
+   
+}
+
+
+@media (max-width:480px) {
+    html {
+        font-size: 50%;
+    }
+    .heading h1{
+        font-size: 2.5rem;
+    }
+    /* form .box{
+        min-width: 100%;
+        margin: .5rem;
+    } */
+
+    form .row1 .col{
+        width: 100%;
+    }
+    
+    form .row2 .col{
+        width: calc(100%/2 - 1rem);
+        /* width: 100%; */
+    }
+
+    form .row2 .col .lists{
+        /* display: none; */
+    }
+    .message-container form .input .input-box{
+        width: 100%;
+    }
+    
+   
+}
